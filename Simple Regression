@@ -1,1 +1,89 @@
+Simple Linear Regression 📈
+Simple linear regression models the relationship between two variables: an independent variable X and a dependent variable Y. It assumes a linear relationship between them:
 
+Y=β 0 + β 1 ⋅X+ϵ
+🔍 Objective Predict Y based on X.
+
+
+🔑 Key Concepts
+β 0 : Intercept (where the line crosses the Y-axis).
+β 1: Slope (how steep the line is).
+ϵ: Error term (residuals, the difference between actual and predicted values).
+
+
+🛠️ Steps
+Data Collection: Gather paired data points of X and Y.
+Model Training: Estimate β 0 and β 1 using Ordinary Least Squares (OLS).
+Evaluation: Assess model performance with metrics like MSE, RMSE, and R 2.
+
+Assumptions of Linear Regression 🧠📊
+Linear regression assumes several conditions for accurate modeling and interpretation:
+
+Linearity: 📈 Assumes a linear relationship between the independent variables X and the dependent variable Y.
+Independence of Errors: 🔄 Assumes that the errors (residuals) ϵ are independent of each other.
+Homoscedasticity: 🎯 Assumes that the variance of the errors is constant across all levels of the independent variables X.
+Normality of Errors: 📊 Assumes that the errors ϵ are normally distributed.
+No Multicollinearity: 🚫 Assumes that the independent variables X are not highly correlated with each other.
+
+🌟 Usage
+Applications: Used in fields like economics, finance, and social sciences to analyze and predict relationships between variables.
+
+
+
+Simple Linear Regression 📈
+Variables:
+
+Independent: Only one independent variable X predicts Y.
+Equation:
+Models the relationship as a straight line:
+Y=β 0 + β 1 ⋅ X + ϵ 
+
+β 0 : Intercept.
+β 1: Slope.
+ϵ: Error term.
+
+🔍Objective:
+Predict Y based on X.
+
+🧠📊 Assumptions:
+Assumes a linear relationship between X and Y.
+Error terms are independent and normally distributed.
+
+
+Implementation:
+Simple to implement and interpret.
+Useful for exploring relationships between two variables.
+Multiple Linear Regression 📊
+Variables:
+Independent: Involves multiple independent variables X 1,X 2 ,…,X p to predict Y.
+
+Equation: Models the relationship with multiple predictors:
+
+Y=β 0 + β 1 ⋅ X 1 + β 2 ⋅ X 2 + … + β p ⋅ X p + ϵ
+
+β 0: Intercept.
+β 1,β 2,…,β p: Coefficients.
+ϵ: Error term.
+
+
+🔍Objective:
+Predict Y based on X 1,X 2,…,X p.
+
+
+🧠📊 Assumptions:
+Assumes a linear relationship between Y and each X i, holding others constant.
+Error terms are independent and normally distributed.
+
+
+Implementation:
+More complex due to multiple predictors.
+Allows modeling of complex relationships and interactions.
+
+
+🔑Key Differences 🔄
+Variables: Simple linear regression uses one X, while multiple linear regression uses X 1,X 2 , … , X p.
+Complexity: Multiple linear regression is more complex to implement and interpret.
+Applications: Simple linear regression for exploring simple relationships, multiple linear regression for analyzing impacts of multiple variables.
+Interpretation: In simple regression, β 1 measures Y's change for a unit X change. In multiple regression, each β i affects 𝑌, holding others constant.
+
+In summary, choose between simple and multiple linear regression based on variable count and relationship complexity you want to model.
