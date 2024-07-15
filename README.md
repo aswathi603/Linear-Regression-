@@ -69,6 +69,53 @@ Evaluation: Evaluate model accuracy using metrics like MSE, RMSE, and R 2.
 
 Usage
 Applications: Linear regression is used in various fields such as economics, finance, and social sciences for predicting outcomes based on historical data and understanding relationships among variables.
+Model evaluation for regression involves assessing how well a predictive model performs in terms of predicting continuous outcomes. Here are some commonly used metrics and techniques for evaluating regression models:
+
+1. Mean Absolute Error (MAE):
+Definition: Average of the absolute differences between predictions and actual values.
+Interpretation: Measures the average magnitude of errors in a set of predictions, without considering their direction.
+Formula: MAE= 1/n∑ i=1...n |(y i− y'i)|
+Use: Easy to understand and gives a good sense of average prediction error.
+
+3. Mean Squared Error (MSE):
+Definition: Average of the squares of the errors between predicted and actual values.
+Interpretation: Puts more weight on large errors and is more useful in practice than MAE because it is differentiable.
+Formula: MSE= 1/n∑ i=1...n((y i− y'i)^2)
+Use: Widely used but sensitive to outliers due to squaring.
+
+
+3. Root Mean Squared Error (RMSE):
+Definition: Square root of the MSE, which gives the error metric in the same units as the target variable.
+Interpretation: RMSE is more interpretable than MSE as it is in the same units as the predicted and actual values.
+Formula: RMSE= sqrt(MSE)
+Use: Provides a good sense of how much error the system typically makes in its predictions.
+
+
+4. R-squared (Coefficient of Determination):
+Definition: Proportion of the variance in the dependent variable that is predictable from the independent variables.
+Interpretation: Measures the goodness of fit of the model; ranges from 0 to 1, where 1 indicates perfect predictions.
+Formula: R^2 = 1−sum squared regression (SSR)/total sum of squares (SST)
+
+1.Ordinary — Ordinary (unadjusted) R-squared
+R^2 =  SSR / SST  =1−  SSE/SST.
+
+2.Adjusted — R-squared adjusted for the number of coefficients
+R^2 adj  =1−( n−1/n−p)SSE/SST.
+
+3.R^2=1− ∑ i=1....n(y i− y'i)^2 / ∑i=1...n(y i− y'i)^2
+ 
+Use: Provides an indication of how well the model captures the variance in the data.
+
+
+Other Considerations:
+Residual Analysis: Examining the distribution of residuals (i.e., differences between actual and predicted values) to check for any patterns or biases.
+Cross-Validation: Techniques such as k-fold cross-validation to assess how the model generalizes to unseen data.
+Comparing against Baseline: Comparing your model's performance against a baseline model (e.g., mean predictor) to see if it provides any improvement.
+Choosing the Right Metric:MAE and RMSE are generally preferred for different purposes; MAE if you want a metric that is robust to outliers, and RMSE if you want to penalize large errors more.
+
+
+R-squared is useful for understanding the proportion of variance explained but should be used in conjunction with other metrics to get a complete picture.
+By using these metrics and techniques, you can effectively evaluate the performance of your regression model and make informed decisions about its suitability for your problem.
 
 
 
